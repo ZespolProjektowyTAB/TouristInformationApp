@@ -115,12 +115,12 @@ const Login = () => {
     if (state.username === 'abc@email.com' && state.password === 'password') {
       dispatch({
         type: 'loginSuccess',
-        payload: 'Login Successfully'
+        payload: 'Pomyślnie zalogowano się'
       });
     } else {
       dispatch({
         type: 'loginFailed',
-        payload: 'Incorrect username or password'
+        payload: 'Niepoprawna nazwa użytkownika bądź hasło'
       });
     }
   };
@@ -149,7 +149,7 @@ const Login = () => {
   return (
     <form className={classes.container} noValidate autoComplete="off">
       <Card className={classes.card}>
-        <CardHeader className={classes.header} title="Login App" />
+        <CardHeader className={classes.header} title="Zaloguj się" />
         <CardContent>
           <div>
             <TextField
@@ -157,7 +157,7 @@ const Login = () => {
               fullWidth
               id="username"
               type="email"
-              label="Username"
+              label="Nazwa użytkownika"
               placeholder="Username"
               margin="normal"
               onChange={handleUsernameChange}
@@ -168,7 +168,7 @@ const Login = () => {
               fullWidth
               id="password"
               type="password"
-              label="Password"
+              label="Hasło"
               placeholder="Password"
               margin="normal"
               helperText={state.helperText}

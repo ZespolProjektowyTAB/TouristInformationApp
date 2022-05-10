@@ -158,7 +158,7 @@ const Login = () => {
               id="username"
               type="email"
               label="Nazwa użytkownika"
-              placeholder="Username"
+              placeholder="Nazwa użytkownika"
               margin="normal"
               onChange={handleUsernameChange}
               onKeyPress={handleKeyPress}
@@ -169,7 +169,7 @@ const Login = () => {
               id="password"
               type="password"
               label="Hasło"
-              placeholder="Password"
+              placeholder="Hasło"
               margin="normal"
               helperText={state.helperText}
               onChange={handlePasswordChange}

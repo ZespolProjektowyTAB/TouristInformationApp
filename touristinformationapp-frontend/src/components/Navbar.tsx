@@ -20,7 +20,7 @@ const Navbar = () => {
     toggleRegisterVisibility();
   };
 
-  const content = <React.Fragment>Hey, I'm a model.</React.Fragment>;
+  //const content = <React.Fragment>Hey, I'm a model.</React.Fragment>;
 
   return (
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">

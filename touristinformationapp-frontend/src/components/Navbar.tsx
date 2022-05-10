@@ -6,6 +6,7 @@ import Login from "./Login";
 import Register from "./Register";
 import { useState } from "react";
 import React from "react";
+import Toggle from "react-toggle";
 
 const Navbar = () => {
   const [loginIsVisible, toggleLoginVisibility] = useModal();
@@ -20,14 +21,14 @@ const Navbar = () => {
     toggleRegisterVisibility();
   };
 
-  //const content = <React.Fragment>Hey, I'm a model.</React.Fragment>;
+  //const content = <React.Fragment>Hey, I'm a model.</React.Fragment>; 
 
   return (
-    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+    <nav className="bg-gray-800 border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-gray-800">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <a href="#" className="flex items-center">
           <img src={logo} className={styles.logo} alt="Logo Polsl" />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
             Informacja turystyczna
           </span>
         </a>
@@ -36,7 +37,7 @@ const Navbar = () => {
             <button
               onClick={handleLogin}
               type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 :bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
             >
               Zaloguj się
             </button>
@@ -50,7 +51,7 @@ const Navbar = () => {
             <button
               onClick={handleRegister}
               type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
             >
               Zarejestuj się
             </button>
@@ -64,7 +65,7 @@ const Navbar = () => {
           <button
             data-collapse-toggle="mobile-menu-4"
             type="button"
-            className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
             aria-controls="mobile-menu-4"
             aria-expanded="false"
           >
@@ -103,7 +104,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 text-white"
                 aria-current="page"
               >
                 Strona główna
@@ -112,7 +113,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:hover:text-white text-gray-400 hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
               >
                 O nas
               </a>
@@ -120,7 +121,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:hover:text-white text-gray-400 hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
               >
                 Kontakt
               </a>

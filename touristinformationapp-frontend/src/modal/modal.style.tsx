@@ -45,7 +45,9 @@ export const CloseButton = styled.button`
 	font-size: 0.8rem;
 	border: none;
 	border-radius: 3px;
+	padding-top: 8px;
 	margin-left: 0.5rem;
+	padding-left: 395px;
 	background: none;
 	:hover {
 		cursor: pointer;
